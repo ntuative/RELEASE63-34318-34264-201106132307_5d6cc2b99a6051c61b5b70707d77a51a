@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout name="purse_widget" width="107" height="36" version="0.1" uid="4B244FAA-D3E2-18B1-4E69-87CC97E36CE8">
+  <window>
+    <border x="0" y="0" width="107" height="36" params="393280" style="5">
+      <filters>
+        <DropShadowFilter distance="3" alpha="0.592156862745098"/>
+      </filters>
+      <children>
+        <itemlist_horizontal x="4" y="4" width="99" height="33" params="12582928" style="0" name="indicator_itemlist">
+          <variables>
+            <var key="spacing" value="3" type="int"/>
+            <var key="resize_on_item_update" value="true" type="Boolean"/>
+          </variables>
+        </itemlist_horizontal>
+      </children>
+    </border>
+  </window>
+</layout>

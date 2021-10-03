@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?><layout name="friendRequestsTab" width="127" height="36" version="0.1" uid="62DE3B78-DB1B-89E7-6537-881B63A01BED">
+  <window>
+    <border x="39" y="292" width="127" height="36" params="1" style="6" name="frame" color="0x0e0b03c" clipping="false" treshold="0">
+      <children>
+        <itemlist_vertical x="7" y="3" width="116" height="40" params="8388752" style="0" name="list" height_min="40">
+          <children>
+            <region x="0" y="0" width="112" height="31" params="145" style="0" name="header" color="0xff4f8e38" treshold="0">
+              <children>
+                <bitmap x="-2" y="-5" width="31" height="34" params="1310720" style="0" name="icon">
+                  <variables>
+                    <var key="bitmap_asset_name" value="add_friends_icon_png" type="String"/>
+                  </variables>
+                </bitmap>
+                <text x="29" y="0" width="77" height="30" params="3148816" style="0" name="label" caption="%24%7Bfriendbar.requests.title%7D" tags="label">
+                  <variables>
+                    <var key="antialias_type" value="advanced" type="String"/>
+                    <var key="auto_size" value="left" type="String"/>
+                    <var key="font_face" value="Ubuntu" type="String"/>
+                    <var key="font_size" value="12" type="uint"/>
+                    <var key="grid_fit_type" value="subpixel" type="String"/>
+                    <var key="text_color" value="0xffffff" type="hex"/>
+                    <var key="text_style" value="headline_medium" type="String"/>
+                    <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                    <var key="word_wrap" value="true" type="Boolean"/>
+                    <var key="bold" value="true" type="Boolean"/>
+                  </variables>
+                </text>
+              </children>
+            </region>
+          </children>
+          <variables>
+            <var key="scale_to_fit_items" value="true" type="Boolean"/>
+            <var key="resize_on_item_update" value="true" type="Boolean"/>
+          </variables>
+        </itemlist_vertical>
+        <bubble x="-45" y="-298" width="222" height="304" params="1" style="0" name="bubble" color="0x0e0b03c">
+          <children>
+            <text x="0" y="4" width="204" height="16" params="16" style="0" name="title" caption="%24%7Bfriendbar.requests.title%7D">
+              <variables>
+                <var key="antialias_type" value="advanced" type="String"/>
+                <var key="auto_size" value="center" type="String"/>
+                <var key="font_face" value="Ubuntu" type="String"/>
+                <var key="font_size" value="11" type="uint"/>
+                <var key="text_color" value="0xffffff" type="hex"/>
+                <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                <var key="bold" value="true" type="Boolean"/>
+              </variables>
+            </text>
+            <closebutton x="184" y="3" width="19" height="20" params="17" style="3" name="button_close" background="true" treshold="0"/>
+            <itemlist_vertical x="4" y="27" width="184" height="220" params="16" style="0" name="request_entity_list">
+              <children>
+                <background x="0" y="0" width="184" height="50" params="16" style="0" name="request_entity" color="0xffffac8c40" background="true">
+                  <children>
+                    <bitmap x="1" y="3" width="39" height="44" params="16" style="0" name="canvas"/>
+                    <text x="41" y="4" width="138" height="17" params="16" style="0" name="name" caption="Name">
+                      <variables>
+                        <var key="antialias_type" value="advanced" type="String"/>
+                        <var key="font_face" value="Ubuntu" type="String"/>
+                        <var key="font_size" value="11" type="uint"/>
+                        <var key="text_color" value="0xffffff" type="hex"/>
+                        <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                        <var key="bold" value="true" type="Boolean"/>
+                      </variables>
+                    </text>
+                    <region x="40" y="27" width="119" height="18" params="17" style="0" name="click_area_discard" treshold="0">
+                      <children>
+                        <text x="0" y="0" width="119" height="15" params="4194320" style="0" caption="%24%7Bfriendbar.request.discard%7D">
+                          <variables>
+                            <var key="antialias_type" value="advanced" type="String"/>
+                            <var key="auto_size" value="left" type="String"/>
+                            <var key="font_face" value="Ubuntu" type="String"/>
+                            <var key="font_size" value="10" type="uint"/>
+                            <var key="text_color" value="0xffffff" type="hex"/>
+                            <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                            <var key="underline" value="true" type="Boolean"/>
+                          </variables>
+                        </text>
+                      </children>
+                    </region>
+                    <button x="95" y="20" width="80" height="28" params="393217" style="3" name="button_accept" caption="%24%7Bfriendbar.request.accept%7D" width_max="80"/>
+                  </children>
+                </background>
+              </children>
+            </itemlist_vertical>
+            <scrollbar_vertical x="185" y="27" width="17" height="220" params="17" style="0">
+              <variables>
+                <var key="scrollable" value="title" type="String"/>
+              </variables>
+            </scrollbar_vertical>
+            <region x="11" y="258" width="143" height="16" params="17" style="0" name="click_area_discard_all" treshold="0">
+              <children>
+                <text x="0" y="0" width="141" height="16" params="4194320" style="0" caption="%24%7Bfriendbar.requests.discard%7D">
+                  <variables>
+                    <var key="antialias_type" value="advanced" type="String"/>
+                    <var key="auto_size" value="left" type="String"/>
+                    <var key="font_face" value="Ubuntu" type="String"/>
+                    <var key="font_size" value="11" type="uint"/>
+                    <var key="text_color" value="0xffffff" type="hex"/>
+                    <var key="mouse_wheel_enabled" value="false" type="Boolean"/>
+                    <var key="bold" value="true" type="Boolean"/>
+                    <var key="underline" value="true" type="Boolean"/>
+                  </variables>
+                </text>
+              </children>
+            </region>
+            <background x="4" y="27" width="184" height="1" params="16" style="0" color="0xffff564620" background="true"/>
+            <background x="4" y="246" width="184" height="1" params="16" style="0" color="0xffff564620" background="true"/>
+            <button_thick x="28" y="254" width="171" height="28" params="393297" style="5" name="button_accept_all" caption="%24%7Bfriendbar.requests.accept%7D" color="0x077bf43"/>
+          </children>
+        </bubble>
+        <badge x="103" y="-7" width="17" height="20" params="393216" style="0" name="badge_counter" caption="0" color="0x0de4537"/>
+      </children>
+    </border>
+  </window>
+</layout>
